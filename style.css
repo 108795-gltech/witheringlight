@@ -1,0 +1,99 @@
+* {
+  font-family: 'Jersey 15';
+  font-style: normal;
+  font-weight: 400;
+}
+.standard {
+    background-color: #1F162B;
+    color:#8c8c8c;
+}
+.cave-banner {
+    animation: tile-move 25s linear infinite;
+    background-image:url(https://codehs.com/uploads/de70b26e14865cbee01c5b40bcd5fc82);
+    background-repeat:repeat-x;
+    background-position:center center;
+    color:white;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align:center;
+    width:100%;
+    min-height:256px;
+}
+.sky-banner {
+    animation: bg-move 60s linear infinite;
+    background-image:url(https://codehs.com/uploads/7f4b95b6512892a6604ad75a8087b70b);
+    background-repeat:repeat-x;
+    background-position:center center;
+    color:white;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align:center;
+    width:100%;
+    min-height:256px;
+}
+.sunset-banner {
+    animation: bg-move-inverted 60s linear infinite;
+    background-image:url(https://codehs.com/uploads/9565fd30227c33ecb0c08147e6cc6446);
+    background-repeat:repeat-x;
+    background-position:center center;
+    color:white;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align:center;
+    width:100%;
+    min-height:256px;
+}
+.header {
+    font-size:670%;
+    -webkit-text-stroke-color:white; 
+    -webkit-text-stroke-width:3px
+}
+
+.info-section {
+    background-color: #1F162B;
+    color:rgb(190, 190, 190);
+}
+.download-button {
+    background-color:#463559;
+    text-decoration:none;
+    color:white;
+    font-size:50px;
+    border-radius:8px;
+    padding:10px;
+}
+.download-button:hover {
+    color:#fff79e;
+    background-color:#382a47;
+}
+.download-button:active {
+    color:#d6d6d6;
+    background-color:#6b5287;
+}
+.info-card {
+    height:100%;
+}
+
+@keyframes bg-move {
+    from {
+        background-position:0px center;
+    }
+    to {
+        background-position:640px center;
+    }
+}
+@keyframes bg-move-inverted {
+    from {
+        background-position:0px center;
+    }
+    to {
+        background-position:-640px center;
+    }
+}
+@keyframes tile-move {
+    from {
+        background-position:0px center;
+    }
+    to {
+        background-position:-256px center;
+    }
+}
